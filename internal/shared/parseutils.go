@@ -43,7 +43,10 @@ func ParseText(p *xpp.XMLPullParser) (string, error) {
 	result = strings.TrimSpace(result)
 
 	if strings.Contains(result, CDATA_START) {
-		return StripCDATA(result), nil
+		prestring, _ := DecodeEntities(result[:strings.Index(result, CDATA_START)])
+		cdatastring := StripCDATA(result)
+		poststring, _ := DecodeEntities(result[strings.Index(result, CDATA_END)+3:])
+		return prestring + cdatastring + poststring, nil
 	}
 
 	return DecodeEntities(result)
