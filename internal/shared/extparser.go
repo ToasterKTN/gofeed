@@ -3,7 +3,7 @@ package shared
 import (
 	"strings"
 
-	"github.com/mmcdole/gofeed/extensions"
+	"github.com/ToasterKTN/gofeed/extensions"
 	"github.com/mmcdole/goxpp"
 )
 

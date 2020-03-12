@@ -1,4 +1,4 @@
-module github.com/mmcdole/gofeed
+module github.com/ToasterKTN/gofeed
 
 require (
 	github.com/PuerkitoBio/goquery v1.5.0
@@ -10,3 +10,5 @@ require (
 	golang.org/x/net v0.0.0-20181220203305-927f97764cc3
 	golang.org/x/text v0.3.0
 )
+
+go 1.13

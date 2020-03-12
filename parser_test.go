@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mmcdole/gofeed"
+	"github.com/ToasterKTN/gofeed"
 	"github.com/stretchr/testify/assert"
 )
 
